@@ -10,7 +10,7 @@ This project is a PHP OOP REST API for quotations. It supports CRUD operations f
 https://your-project-url.com
 
 ## API Base URL
-https://Midterm-REST-API.com/api
+postgresql://quotesdb_ng6p_user:RRwU9Xnd8gHjwhxZh54oLi88023KNLNf@dpg-d75ucfnfte5s73e922f0-a/quotesdb_ng6p
 
 ## GitHub Repository
 [https://github.com/your-username/your-repo-name](https://github.com/JorgeD88/Midterm-REST-API.git)
