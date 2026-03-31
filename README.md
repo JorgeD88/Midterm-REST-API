@@ -13,7 +13,7 @@ https://your-project-url.com
 https://your-project-url.com/api
 
 ## GitHub Repository
-https://github.com/your-username/your-repo-name
+[https://github.com/your-username/your-repo-name](https://github.com/JorgeD88/Midterm-REST-API.git)
 
 ## Endpoints
 
