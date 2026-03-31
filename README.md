@@ -7,7 +7,7 @@ Jorge De La Cruz
 This project is a PHP OOP REST API for quotations. It supports CRUD operations for quotes, authors, and categories using a MySQL database.
 
 ## Live Project
-https://your-project-url.com
+[https://your-project-url.com](https://Midterm-REST-API.hostname.com/api)
 
 ## API Base URL
 postgresql://quotesdb_ng6p_user:RRwU9Xnd8gHjwhxZh54oLi88023KNLNf@dpg-d75ucfnfte5s73e922f0-a/quotesdb_ng6p
