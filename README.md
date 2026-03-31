@@ -1,7 +1,7 @@
 # Quotes Midterm Project
 
 ## Student Name
-Your Name Here
+Jorge De La Cruz
 
 ## Project Description
 This project is a PHP OOP REST API for quotations. It supports CRUD operations for quotes, authors, and categories using a MySQL database.
