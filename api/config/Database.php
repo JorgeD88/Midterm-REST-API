@@ -20,16 +20,19 @@ class Database {
         $this->conn = null;
 
         try {
-            $dsn = "pgsql:host={$this->host};port={$this->port};dbname={$this->db_name};sslmode=require";
+            $dsn = 'pgsql:host=' . $this->host .
+                   ';port=' . $this->port .
+                   ';dbname=' . $this->db_name .
+                   ';sslmode=require';
 
-            $this->conn = new PDO($dsn, $this->username, $this->password, [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+            $this->conn = new PDO($dsn, $this->username, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            echo json_encode([
+                'message' => 'Database Connection Error',
+                'error' => $e->getMessage()
             ]);
-        } catch (error) {
-              console.error("DB error:", error);
-              res.status(500).json({ message: "Database Connection Error", error: error.message });
-            }
+            exit;
         }
 
         return $this->conn;
