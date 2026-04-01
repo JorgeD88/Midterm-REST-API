@@ -10,7 +10,7 @@ This project is a PHP OOP REST API for quotations. It supports CRUD operations f
 https://midterm-rest-api-tel9.onrender.com/api
 
 ## API Base URL
-postgresql://postgres:[YOUR-PASSWORD]@db.nmbjhwzhuporyoqvxiih.supabase.co:5432/postgres
+https://nmbjhwzhuporyoqvxiih.supabase.co
 
 ## GitHub Repository
 https://github.com/JorgeD88/Midterm-REST-API.git
