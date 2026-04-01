@@ -26,11 +26,10 @@ class Database {
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
             ]);
-        } catch (PDOException $e) {
-            echo json_encode([
-                'message' => 'Database Connection Error'
-            ]);
-            exit;
+        } catch (error) {
+              console.error("DB error:", error);
+              res.status(500).json({ message: "Database Connection Error", error: error.message });
+            }
         }
 
         return $this->conn;
